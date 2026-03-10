@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class RecipesScreen extends StatelessWidget {
-  const RecipesScreen({Key? key}) : super(key: key);
+class RecipesScreen extends ConsumerWidget {
+  const RecipesScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Recipes', style: Theme.of(context).textTheme.titleLarge),
+        title: const Text('Recipes'),
       ),
-      body: Center(
-        child: Text('Welcome to the Recipe App!', style: Theme.of(context).textTheme.bodyMedium),
+      body: const Center(
+        child: Text('Recipe List'),
       ),
     );
   }

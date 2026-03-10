@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:recipe_app/core/routing/app_router.dart';
+import 'package:go_router/go_router.dart';
+import 'core/routing/app_router.dart';
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
